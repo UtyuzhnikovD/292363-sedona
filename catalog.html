@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><!--Возможно потребуется установить Tab Size=2 -->
+	<head>
+		<meta charset="utf-8">
+		<title>Hotels</title>
+	</head>
+	<body>
+		<div class="container">
+      <header> 
+        <nav class="main-navigation">
+          <ul class="">
+            <li class="navigation-left">
+              <a href="#">Информация</a>
+              <a href="#">Фото и видео</a></li>
+            <li class="logo"><img src="http://placehold.it/120x60" width="120" height="60" alt="logo"></li>
+            <li class="navigation-right">
+              <a href="#">Карта штата</a>
+              <a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>    
+    </div>
+    <main>
+    	<form class="filters" action="#" method="post">
+    		<fieldset class="column">
+    			<legend>Инфраструктура:</legend>
+  				<span class="options">
+  					<input type="checkbox" name="pool" value="Бассейн" checked>Бассейн
+  					<input type="checkbox" name="parking" value="Парковка">Парковка 
+  					<input type="checkbox" name="wifi" value="wi-fi">Wi-Fi
+  				</span>
+  			</fieldset>
+				<fieldset class="column">
+					<legend>Тип жилья:</legend>
+					<span class="options">
+						<input type="checkbox" name="hotel" value="Гостиница" checked>
+  					Гостиница 
+  					<input type="checkbox" name="motel" value="Мотель" checked>Мотель
+  					<input type="checkbox" name="apartments" value="Апартаменты" checked>Апартаменты
+  				</span>
+  			</fieldset>
+  			<fieldset class="column">
+  				<legend>стоимость в сутки(р):</legend>
+  				<div class="range-values">
+  				 	<label class="range-from" for="range">от 0
+  				 	</label>
+  				 	<input type="range" min="0" max="3000" id="range">
+  					<label class="range-to" for="range">до 3000
+      			</label> 
+      		</div>
+      		</fieldset>
+  			<button type="submit" name="show">Показать</button>
+  		</form>
+    	<div class="sorting">
+    		<span>Найдено: 3</span>
+    		<span>Сортировка:</span>
+        <ul class="list">
+          <li><a class="active">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
+        </ul>
+       	<ul class="icon-direction">
+        	<li><a href="#"><span class="icon"></span></a>
+        	</li>
+        	<li><a href="#"><span class="icon-active"></span></a> 
+        	</li>
+        </ul>
+      </div>
+      <div class="results">
+	    	<div class="detail">
+	    		<img src="http://placehold.it/120x60" alt="AmaraRS">
+	    		<h3>Amara resort &amp;spa</h3>
+	    		<div class="block"> 
+	    			<span>Гостиница</span>
+	    			<a href="#">подробнее</a></div>
+	    		<div class="block">
+	    			<span>От 3500 р.</span>
+	    			<a href="#">забронировать</a></div>
+	    		<div class="icon-star">Звезды: 4</div>	
+	    		<div class="rating">Рейтинг: 8,5</div>		
+	    	</div> 
+      	<div class="detail">
+      		<img src="http://placehold.it/120x60" alt="DesertQI">
+      		<h3>Desert Quail Inn</h3>
+      		<div class="block"> 
+      			<span>Мотель</span>
+      			<a href="#">подробнее</a></div>
+      		<div class="block">
+      			<span>От 2000 р.</span>
+      			<a href="#">забронировать</a></div>
+      		<div class="icon-star">Звезды: 2</div>	
+      		<div class="rating">Рейтинг: 8,9</div>		
+      	</div>
+      	<div class="detail">
+      		<img src="http://placehold.it/120x60" alt="VillasPD">
+      		<h3>Villas at Poco Diablo</h3>
+      		<div class="block"> 
+      			<span>Апартаменты</span>
+      			<a href="#">подробнее</a></div>
+      		<div class="block">
+      			<span>От 4000 р.</span>
+      			<a href="#">забронировать</a></div>
+      		<div class="icon-star">Звезды: 3</div>	
+      		<div class="rating">Рейтинг: 9,2</div>		
+      	</div>
+      </div>
+		</main>
+		<footer>
+      <div class="footer-container">
+        <div class="footer-social">
+        	<div class="social-main-contact">
+        		<a href="#">#visitsedona</a>
+        	</div>
+        	<div class="social-btn">
+        		<a class="btn-twitter" href="#"></a>
+	          <a class="btn-facebook" href="#"></a>
+	          <a class="btn-youtube" href="#"></a>
+        	</div>        	
+        </div>
+        <div class="footer-copyright">
+          <p>website by 
+          <a href="#"><img src="htmlacademy-logo"></a></p>          
+        </div>
+      </div>
+    </footer>  
+	</body>
+</html>
