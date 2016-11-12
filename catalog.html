@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><!--Возможно потребуется установить Tab Size=2 -->
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Hotels</title>
@@ -14,7 +14,8 @@
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul>
-          <img class="logo" src="http://placehold.it/120x60" width="120" height="60" alt="logo">
+          <a href="index.html"><img src="http://placehold.it/120x60" width="120" height="60"
+          alt="logo"></a>
         </nav>
       </header>    
     </div>
@@ -22,16 +23,22 @@
     	<form class="filters" action="#" method="post">
     		<fieldset class="column">
     			<legend>Инфраструктура:</legend>
-  					<input type="checkbox" name="pool" value="Бассейн" checked>Бассейн
-  					<input type="checkbox" name="parking" value="Парковка">Парковка 
-  					<input type="checkbox" name="wifi" value="wi-fi">Wi-Fi
+  					<legend>Инфраструктура:</legend>
+            <input type="checkbox" id="pool" checked>
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" id="parking">
+            <label for="parking">Парковка</label> 
+            <input type="checkbox" id="wifi">
+            <label for="wifi">Wi-Fi</label>
   			</fieldset>
 				<fieldset class="column">
 					<legend>Тип жилья:</legend>
-					  <input type="checkbox" name="hotel" value="Гостиница" checked>
-  					Гостиница 
-  					<input type="checkbox" name="motel" value="Мотель" checked>Мотель
-  					<input type="checkbox" name="apartments" value="Апартаменты" checked>Апартаменты
+					  <input type="checkbox" id="hotel" checked>
+            <label for="hotel">Гостиница</label> 
+            <input type="checkbox" id="motel" checked>
+            <label for="motel">Мотель</label>
+            <input type="checkbox" id="apartments" checked>
+            <label for="apartments">Апартаменты</label>
   			</fieldset>
   			<fieldset class="column">
   				<legend>стоимость в сутки(р):</legend>
@@ -100,21 +107,16 @@
       </div>
 		</main>
 		<footer>
-      <div class="footer-container">
-        <div class="footer-social">
-        	<div class="social-main-contact">
-        		<a href="#">#visitsedona</a>
-        	</div>
-        	<div class="social-btn">
-        		<a class="btn-twitter" href="#"></a>
-	          <a class="btn-facebook" href="#"></a>
-	          <a class="btn-youtube" href="#"></a>
-        	</div>        	
-        </div>
-        <div class="footer-copyright">
-          <p>website by 
-          <a href="#"><img src="htmlacademy-logo"></a></p>          
-        </div>
+      <div class="container">
+        <a href="#">#visitsedona</a>
+        <div class="social-btn">
+          <a class="btn-twitter" href="#"></a>
+          <a class="btn-facebook" href="#"></a>
+          <a class="btn-youtube" href="#"></a>
+        </div>          
+      </div>
+      <div class="author">
+        <p>website by <a class="website-logo" href="#"></a></p>
       </div>
     </footer>  
 	</body>
